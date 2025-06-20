@@ -47,10 +47,52 @@ std::string StringReturningFunction();
 
 
 //-------------------------------------------------
-//Function To Print
+//Printing On Console
 void PrintOnTerminal() {
     std::cout << "Hello, World!" << std::endl;
 }
+//cout Is Console Output
+//endl Is End Line (/n Can Be Used, But endl Is Better)
+
+//-------------------------------------------------
+//Defining Vairables
+void DefiningBasicVairableTypes() {
+    int number = 10;
+    float decimal = 1.5;
+    double bigdecimal = 1.12345;
+    char letter = 'A';
+    bool decision = true;
+    std::string word = "Hello World";
+}
+//char HAS To Use '_' NOT "_" ("_" Is Actually ['_', '/n'], char Only Allows One Elemnet)
+//#include Is Almost Required For A String
+
+//-------------------------------------------------
+//Math Operations
+//Basic Math Operations
+void BasicMaths() {
+    int addition = 1 + 2;
+    int minus = 1 - 2;
+    int times = 1 * 2;
+    double divide = 1 / 2; //float Can Work Too (~7 Decimal Points), double Is More Precice (~15 Decimal Points)
+    int integerdivide = 1 / 2; //Integer Division (No Decimals)
+    int modulus = 1 % 2;
+}
+//Complex Math Operations
+#include <cmath>
+void AdvancedMaths(){
+    double root = sqrt(16); //√16 = 4.0
+    double power = pow(2,3); //2³ = 8.0
+    int absolute = abs(-10); // = 10
+    double floatabsolute = fabs(-3.14); // = 3.14 Can Be Done With float Too
+    float rounddown = floor(2.9); // = 2.0
+    float roundup = ceil(2.1); // = 3.0
+    float roundnormal = round(2.5); // = 3.0
+}
+
+//-------------------------------------------------
+//Comparison Operations
+
 
 //-------------------------------------------------
 //Main Function Is Whats Run When Program Is Ran
