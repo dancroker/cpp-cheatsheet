@@ -92,7 +92,63 @@ void AdvancedMaths(){
 
 //-------------------------------------------------
 //Comparison Operations
+void Comparisons(){
+    std::string Equal = "a == b";
+    std::string NotEqual = "a != b";
+    std::string GreaterThan = "a > b";
+    std::string LessThan = "a < b";
+    std::string GreaterOrEqualThan = "a >= b";
+    std::string LessOrEqualThan = "a <= b";
+}
+//Stored As Strings Just For Display!
 
+//-------------------------------------------------
+//Logical Operations
+void Logic(){
+    std::string And = "true && false";
+    std::string Or = "true || false";
+    std::string Not = "!true";
+}
+//Stored As Strings Just For Display!
+//true And false Can Be Replaced With Statements
+
+//-------------------------------------------------
+//If Statements
+void IfStatement(){
+    if (1 > 10) {
+        std::cout << "If True" <<std::endl;
+    } 
+    else if (2 > 10) {
+        std::cout << "Else If True" <<std::endl; 
+    } else {
+        std::cout << "If False" <<std::endl;
+    }
+}
+//Simmilar Style To Python If
+//elif Is Not Valid, else if Is Required
+//else Statements Can be Put On a New Line Or Directly After A }
+
+//-------------------------------------------------
+//For Loop
+//for (initialisation; condition; update)
+//; Has To Be Between Each Entry
+void ForLoop(){
+    for (int i = 0; i < 5; i++){
+        std::cout << i <<std::endl; 
+    }
+}
+//int i = 0 This Happens Once At The Start
+//i < 5 This Is The Condition That Needs To Be Met To Stop The Loop
+//i++ This Is Ran At The End Of Each Loop (Use Increment / Decrement Operators)
+void InfinateForLoop(){
+    for (;;) {
+        std::cout << "Forever!" <<std::endl;
+    }
+}
+//With No Condition, The For Loop Is Always true, So It Loops Forever
+
+//-------------------------------------------------
+//Increment / Decrement Operators
 
 //-------------------------------------------------
 //Main Function Is Whats Run When Program Is Ran
