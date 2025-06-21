@@ -78,6 +78,15 @@ void BasicMaths() {
     int integerdivide = 1 / 2; //Integer Division (No Decimals)
     int modulus = 1 % 2;
 }
+//Maths Operations That Apply A Calcuation To ONE Vairable Without Needed To Repeat It
+void OneVariableMaths(){
+    int i = 0;
+    i += 1;    // i = i + 1
+    i -= 1;    // i = i - 1
+    i *= 2;    // i = i * 2
+    i /= 2;    // i = i / 2
+    i %= 2;    // i = i % 2 (remainder after division)
+}
 //Complex Math Operations
 #include <cmath>
 void AdvancedMaths(){
@@ -150,6 +159,52 @@ void InfinateForLoop(){
 //-------------------------------------------------
 //Increment / Decrement Operators
 
+//Post Incremenets Have Operators On The Right Side Of The Value
+//This Will Use The Current Value, Then Apply The Calcualtion
+void PostIncrement(){
+    int i = 1;
+    i++;
+    //i == 2
+    int i = 1;
+    i--;
+    //i == 0
+    int i = 5;
+    int x = i++;  
+    // x = 5, i = 6 (use THEN increase)
+}
+
+//Pre Incremenets Have Operators On The Left Side Of The Value
+//This Will Apply The Calcualtion, Then Use The Value 
+void PreIncrement(){
+    int i = 1;
+    ++i;
+    //i == 2
+    int i = 1;
+    --i;
+    //i == 0
+    int i = 5;
+    int x = ++i;
+    // y = 6, i = 6 (increase THEN use)
+}
+
+//-------------------------------------------------
+//While Loops
+void StandardWhileLoop(){
+    int i = 0;
+    while (i < 5){
+        std::cout << i <<std::endl; 
+        i++;
+    }
+}
+
+//do Will Run The Code, Then Check The Condition, Rather Than Checking First
+void DoWhileLoop(){
+    int x = 10;
+    do{
+        std::cout << "Hello!" << std::endl;
+    } while (x < 5); //This Condition Will Return False
+    //Even So, Hello! Will Be Outputed
+}
 //-------------------------------------------------
 //Main Function Is Whats Run When Program Is Ran
 //(All Functions Need To Be Here!)
